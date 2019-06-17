@@ -1,0 +1,583 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="muduo">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="example">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="contrib">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="muduo\base">
+      <UniqueIdentifier>{be39f075-289b-44c7-8a26-2c0deb67e614}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="muduo\net">
+      <UniqueIdentifier>{5822b78c-55f9-4934-8eca-4a52905b6248}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="muduo\net\http">
+      <UniqueIdentifier>{559bddab-df18-4610-a70c-82122ea53dfb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="muduo\net\poller">
+      <UniqueIdentifier>{efc8e432-8cf1-4dc3-b71b-d009c18d7966}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="muduo\net\protobuf">
+      <UniqueIdentifier>{e40ca965-ab8d-4c9c-930e-c27d00aa4c6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="muduo\net\protorpc">
+      <UniqueIdentifier>{f3a457de-fcd5-47c7-8da6-470a7bc982a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="muduo\net\test">
+      <UniqueIdentifier>{9b44a2c6-4841-4246-b8b9-10dcebc2922d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="muduo\net\http\test">
+      <UniqueIdentifier>{2519f6f9-6674-45a0-99ff-3eeb18e1d248}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="muduo\base\test">
+      <UniqueIdentifier>{2d806de5-54d8-4a53-baf7-2dbd377b0a2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="contrib\hiredis">
+      <UniqueIdentifier>{0efefb4b-4bfa-4d78-a1ac-26f45e0fd614}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="contrib\thrift">
+      <UniqueIdentifier>{f5847aea-f0e4-49d0-b654-cffc8b495212}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="contrib\thrift\test">
+      <UniqueIdentifier>{010de037-56a6-4dc3-8e26-d157e9f90399}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="contrib\thrift\test\echo">
+      <UniqueIdentifier>{27ad471a-949c-449f-a002-1a7adaf34c0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="contrib\thrift\test\ping">
+      <UniqueIdentifier>{75d3c813-316b-4a2d-b389-448ef97763b6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="muduo\net\http\tests\HttpRequest_unittest.cc">
+      <Filter>muduo\net\http\test</Filter>
+    </ClCompile>
+    <ClCompile Include="muduo\net\http\tests\HttpServer_test.cc">
+      <Filter>muduo\net\http\test</Filter>
+    </ClCompile>
+    <ClCompile Include="muduo\net\http\HttpContext.cc">
+      <Filter>muduo\net\http</Filter>
+    </ClCompile>
+    <ClCompile Include="muduo\net\http\HttpResponse.cc">
+      <Filter>muduo\net\http</Filter>
+    </ClCompile>
+    <ClCompile Include="muduo\net\http\HttpServer.cc">
+      <Filter>muduo\net\http</Filter>
+    </ClCompile>
+    <ClCompile Include="muduo\net\poller\DefaultPoller.cc">
+      <Filter>muduo\net\poller</Filter>
+    </ClCompile>
+    <ClCompile Include="muduo\net\poller\EPollPoller.cc">
+      <Filter>muduo\net\poller</Filter>
+    </ClCompile>
+    <ClCompile Include="muduo\net\poller\PollPoller.cc">
+      <Filter>muduo\net\poller</Filter>
+    </ClCompile>
+    <ClCompile Include="muduo\net\protobuf\ProtobufCodecLite.cc">
+      <Filter>muduo\net\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="muduo\net\protorpc\RpcChannel.cc">
+      <Filter>muduo\net\protorpc</Filter>
+    </ClCompile>
+    <ClCompile Include="muduo\net\protorpc\RpcCodec.cc">
+      <Filter>muduo\net\protorpc</Filter>
+    </ClCompile>
+    <ClCompile Include="muduo\net\protorpc\RpcCodec_test.cc">
+      <Filter>muduo\net\protorpc</Filter>
+    </ClCompile>
+    <ClCompile Include="muduo\net\protorpc\RpcServer.cc">
+      <Filter>muduo\net\protorpc</Filter>
+    </ClCompile>
+    <ClCompile Include="muduo\net\tests\Buffer_unittest.cc">
+      <Filter>muduo\net\test</Filter>
+    </ClCompile>
+    <ClCompile Include="muduo\net\tests\Channel_test.cc">
+      <Filter>muduo\net\test</Filter>
+    </ClCompile>
+    <ClCompile Include="muduo\net\tests\EchoClient_unittest.cc">
+      <Filter>muduo\net\test</Filter>
+    </ClCompile>
+    <ClCompile Include="muduo\net\tests\EchoServer_unittest.cc">
+      <Filter>muduo\net\test</Filter>
+    </ClCompile>
+    <ClCompile Include="muduo\net\tests\EventLoop_unittest.cc">
+      <Filter>muduo\net\test</Filter>
+    </ClCompile>
+    <ClCompile Include="muduo\net\tests\EventLoopThread_unittest.cc">
+      <Filter>muduo\net\test</Filter>
+    </ClCompile>
+    <ClCompile Include="muduo\net\tests\EventLoopThreadPool_unittest.cc">
+      <Filter>muduo\net\test</Filter>
+    </ClCompile>
+    <ClCompile Include="muduo\net\tests\InetAddress_unittest.cc">
+      <Filter>muduo\net\test</Filter>
+    </ClCompile>
+    <ClCompile Include="muduo\net\tests\TcpClient_reg1.cc">
+      <Filter>muduo\net\test</Filter>
+    </ClCompile>
+    <ClCompile Include="muduo\net\tests\TcpClient_reg2.cc">
+      <Filter>muduo\net\test</Filter>
+    </ClCompile>
+    <ClCompile Include="muduo\net\tests\TcpClient_reg3.cc">
+      <Filter>muduo\net\test</Filter>
+    </ClCompile>
+    <ClCompile Include="muduo\net\tests\TimerQueue_unittest.cc">
+      <Filter>muduo\net\test</Filter>
+    </ClCompile>
+    <ClCompile Include="muduo\net\tests\ZlibStream_unittest.cc">
+      <Filter>muduo\net\test</Filter>
+    </ClCompile>
+    <ClCompile Include="muduo\net\Acceptor.cc">
+      <Filter>muduo\net</Filter>
+    </ClCompile>
+    <ClCompile Include="muduo\net\boilerplate.cc">
+      <Filter>muduo\net</Filter>
+    </ClCompile>
+    <ClCompile Include="muduo\net\Buffer.cc">
+      <Filter>muduo\net</Filter>
+    </ClCompile>
+    <ClCompile Include="muduo\net\Channel.cc">
+      <Filter>muduo\net</Filter>
+    </ClCompile>
+    <ClCompile Include="muduo\net\Connector.cc">
+      <Filter>muduo\net</Filter>
+    </ClCompile>
+    <ClCompile Include="muduo\net\EventLoop.cc">
+      <Filter>muduo\net</Filter>
+    </ClCompile>
+    <ClCompile Include="muduo\net\EventLoopThread.cc">
+      <Filter>muduo\net</Filter>
+    </ClCompile>
+    <ClCompile Include="muduo\net\EventLoopThreadPool.cc">
+      <Filter>muduo\net</Filter>
+    </ClCompile>
+    <ClCompile Include="muduo\net\InetAddress.cc">
+      <Filter>muduo\net</Filter>
+    </ClCompile>
+    <ClCompile Include="muduo\net\Poller.cc">
+      <Filter>muduo\net</Filter>
+    </ClCompile>
+    <ClCompile Include="muduo\net\Socket.cc">
+      <Filter>muduo\net</Filter>
+    </ClCompile>
+    <ClCompile Include="muduo\net\SocketsOps.cc">
+      <Filter>muduo\net</Filter>
+    </ClCompile>
+    <ClCompile Include="muduo\net\TcpClient.cc">
+      <Filter>muduo\net</Filter>
+    </ClCompile>
+    <ClCompile Include="muduo\net\TcpConnection.cc">
+      <Filter>muduo\net</Filter>
+    </ClCompile>
+    <ClCompile Include="muduo\net\TcpServer.cc">
+      <Filter>muduo\net</Filter>
+    </ClCompile>
+    <ClCompile Include="muduo\net\Timer.cc">
+      <Filter>muduo\net</Filter>
+    </ClCompile>
+    <ClCompile Include="muduo\net\TimerQueue.cc">
+      <Filter>muduo\net</Filter>
+    </ClCompile>
+    <ClCompile Include="muduo\base\tests\AsyncLogging_test.cc">
+      <Filter>muduo\base\test</Filter>
+    </ClCompile>
+    <ClCompile Include="muduo\base\tests\Atomic_unittest.cc">
+      <Filter>muduo\base\test</Filter>
+    </ClCompile>
+    <ClCompile Include="muduo\base\tests\BlockingQueue_bench.cc">
+      <Filter>muduo\base\test</Filter>
+    </ClCompile>
+    <ClCompile Include="muduo\base\tests\BlockingQueue_test.cc">
+      <Filter>muduo\base\test</Filter>
+    </ClCompile>
+    <ClCompile Include="muduo\base\tests\BoundedBlockingQueue_test.cc">
+      <Filter>muduo\base\test</Filter>
+    </ClCompile>
+    <ClCompile Include="muduo\base\tests\Date_unittest.cc">
+      <Filter>muduo\base\test</Filter>
+    </ClCompile>
+    <ClCompile Include="muduo\base\tests\Exception_test.cc">
+      <Filter>muduo\base\test</Filter>
+    </ClCompile>
+    <ClCompile Include="muduo\base\tests\FileUtil_test.cc">
+      <Filter>muduo\base\test</Filter>
+    </ClCompile>
+    <ClCompile Include="muduo\base\tests\Fork_test.cc">
+      <Filter>muduo\base\test</Filter>
+    </ClCompile>
+    <ClCompile Include="muduo\base\tests\GzipFile_test.cc">
+      <Filter>muduo\base\test</Filter>
+    </ClCompile>
+    <ClCompile Include="muduo\base\tests\LogFile_test.cc">
+      <Filter>muduo\base\test</Filter>
+    </ClCompile>
+    <ClCompile Include="muduo\base\tests\Logging_test.cc">
+      <Filter>muduo\base\test</Filter>
+    </ClCompile>
+    <ClCompile Include="muduo\base\tests\LogStream_bench.cc">
+      <Filter>muduo\base\test</Filter>
+    </ClCompile>
+    <ClCompile Include="muduo\base\tests\LogStream_test.cc">
+      <Filter>muduo\base\test</Filter>
+    </ClCompile>
+    <ClCompile Include="muduo\base\tests\Mutex_test.cc">
+      <Filter>muduo\base\test</Filter>
+    </ClCompile>
+    <ClCompile Include="muduo\base\tests\ProcessInfo_test.cc">
+      <Filter>muduo\base\test</Filter>
+    </ClCompile>
+    <ClCompile Include="muduo\base\tests\Singleton_test.cc">
+      <Filter>muduo\base\test</Filter>
+    </ClCompile>
+    <ClCompile Include="muduo\base\tests\SingletonThreadLocal_test.cc">
+      <Filter>muduo\base\test</Filter>
+    </ClCompile>
+    <ClCompile Include="muduo\base\tests\Thread_bench.cc">
+      <Filter>muduo\base\test</Filter>
+    </ClCompile>
+    <ClCompile Include="muduo\base\tests\Thread_test.cc">
+      <Filter>muduo\base\test</Filter>
+    </ClCompile>
+    <ClCompile Include="muduo\base\tests\ThreadLocal_test.cc">
+      <Filter>muduo\base\test</Filter>
+    </ClCompile>
+    <ClCompile Include="muduo\base\tests\ThreadLocalSingleton_test.cc">
+      <Filter>muduo\base\test</Filter>
+    </ClCompile>
+    <ClCompile Include="muduo\base\tests\ThreadPool_test.cc">
+      <Filter>muduo\base\test</Filter>
+    </ClCompile>
+    <ClCompile Include="muduo\base\tests\Timestamp_unittest.cc">
+      <Filter>muduo\base\test</Filter>
+    </ClCompile>
+    <ClCompile Include="muduo\base\tests\TimeZone_unittest.cc">
+      <Filter>muduo\base\test</Filter>
+    </ClCompile>
+    <ClCompile Include="muduo\base\AsyncLogging.cc">
+      <Filter>muduo\base</Filter>
+    </ClCompile>
+    <ClCompile Include="muduo\base\Condition.cc">
+      <Filter>muduo\base</Filter>
+    </ClCompile>
+    <ClCompile Include="muduo\base\CountDownLatch.cc">
+      <Filter>muduo\base</Filter>
+    </ClCompile>
+    <ClCompile Include="muduo\base\CurrentThread.cc">
+      <Filter>muduo\base</Filter>
+    </ClCompile>
+    <ClCompile Include="muduo\base\Date.cc">
+      <Filter>muduo\base</Filter>
+    </ClCompile>
+    <ClCompile Include="muduo\base\Exception.cc">
+      <Filter>muduo\base</Filter>
+    </ClCompile>
+    <ClCompile Include="muduo\base\FileUtil.cc">
+      <Filter>muduo\base</Filter>
+    </ClCompile>
+    <ClCompile Include="muduo\base\LogFile.cc">
+      <Filter>muduo\base</Filter>
+    </ClCompile>
+    <ClCompile Include="muduo\base\Logging.cc">
+      <Filter>muduo\base</Filter>
+    </ClCompile>
+    <ClCompile Include="muduo\base\LogStream.cc">
+      <Filter>muduo\base</Filter>
+    </ClCompile>
+    <ClCompile Include="muduo\base\ProcessInfo.cc">
+      <Filter>muduo\base</Filter>
+    </ClCompile>
+    <ClCompile Include="muduo\base\Thread.cc">
+      <Filter>muduo\base</Filter>
+    </ClCompile>
+    <ClCompile Include="muduo\base\ThreadPool.cc">
+      <Filter>muduo\base</Filter>
+    </ClCompile>
+    <ClCompile Include="muduo\base\Timestamp.cc">
+      <Filter>muduo\base</Filter>
+    </ClCompile>
+    <ClCompile Include="muduo\base\TimeZone.cc">
+      <Filter>muduo\base</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\thrift\tests\ping\PingServer.cc">
+      <Filter>contrib\thrift\test\ping</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\thrift\tests\echo\EchoServer.cc">
+      <Filter>contrib\thrift\test\echo</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\thrift\ThriftConnection.cc">
+      <Filter>contrib\thrift</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\thrift\ThriftServer.cc">
+      <Filter>contrib\thrift</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\hiredis\Hiredis.cc">
+      <Filter>contrib\hiredis</Filter>
+    </ClCompile>
+    <ClCompile Include="contrib\hiredis\mrediscli.cc">
+      <Filter>contrib\hiredis</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="muduo\net\http\CMakeLists.txt">
+      <Filter>muduo\net\http</Filter>
+    </Text>
+    <Text Include="muduo\net\protobuf\CMakeLists.txt">
+      <Filter>muduo\net\protobuf</Filter>
+    </Text>
+    <Text Include="muduo\net\protorpc\CMakeLists.txt">
+      <Filter>muduo\net\protorpc</Filter>
+    </Text>
+    <Text Include="muduo\net\tests\CMakeLists.txt">
+      <Filter>muduo\net\test</Filter>
+    </Text>
+    <Text Include="muduo\net\CMakeLists.txt">
+      <Filter>muduo\net</Filter>
+    </Text>
+    <Text Include="muduo\base\tests\CMakeLists.txt">
+      <Filter>muduo\base\test</Filter>
+    </Text>
+    <Text Include="muduo\base\CMakeLists.txt">
+      <Filter>muduo\base</Filter>
+    </Text>
+    <Text Include="contrib\thrift\tests\ping\CMakeLists.txt">
+      <Filter>contrib\thrift\test\ping</Filter>
+    </Text>
+    <Text Include="contrib\thrift\tests\echo\CMakeLists.txt">
+      <Filter>contrib\thrift\test\echo</Filter>
+    </Text>
+    <Text Include="contrib\thrift\CMakeLists.txt">
+      <Filter>contrib\thrift</Filter>
+    </Text>
+    <Text Include="contrib\hiredis\CMakeLists.txt">
+      <Filter>contrib\hiredis</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="muduo\net\http\HttpContext.h">
+      <Filter>muduo\net\http</Filter>
+    </ClInclude>
+    <ClInclude Include="muduo\net\http\HttpRequest.h">
+      <Filter>muduo\net\http</Filter>
+    </ClInclude>
+    <ClInclude Include="muduo\net\http\HttpResponse.h">
+      <Filter>muduo\net\http</Filter>
+    </ClInclude>
+    <ClInclude Include="muduo\net\http\HttpServer.h">
+      <Filter>muduo\net\http</Filter>
+    </ClInclude>
+    <ClInclude Include="muduo\net\poller\EPollPoller.h">
+      <Filter>muduo\net\poller</Filter>
+    </ClInclude>
+    <ClInclude Include="muduo\net\poller\PollPoller.h">
+      <Filter>muduo\net\poller</Filter>
+    </ClInclude>
+    <ClInclude Include="muduo\net\protobuf\BufferStream.h">
+      <Filter>muduo\net\protobuf</Filter>
+    </ClInclude>
+    <ClInclude Include="muduo\net\protobuf\ProtobufCodecLite.h">
+      <Filter>muduo\net\protobuf</Filter>
+    </ClInclude>
+    <ClInclude Include="muduo\net\protorpc\google-inl.h">
+      <Filter>muduo\net\protorpc</Filter>
+    </ClInclude>
+    <ClInclude Include="muduo\net\protorpc\RpcChannel.h">
+      <Filter>muduo\net\protorpc</Filter>
+    </ClInclude>
+    <ClInclude Include="muduo\net\protorpc\RpcCodec.h">
+      <Filter>muduo\net\protorpc</Filter>
+    </ClInclude>
+    <ClInclude Include="muduo\net\protorpc\RpcServer.h">
+      <Filter>muduo\net\protorpc</Filter>
+    </ClInclude>
+    <ClInclude Include="muduo\net\Acceptor.h">
+      <Filter>muduo\net</Filter>
+    </ClInclude>
+    <ClInclude Include="muduo\net\boilerplate.h">
+      <Filter>muduo\net</Filter>
+    </ClInclude>
+    <ClInclude Include="muduo\net\Buffer.h">
+      <Filter>muduo\net</Filter>
+    </ClInclude>
+    <ClInclude Include="muduo\net\Callbacks.h">
+      <Filter>muduo\net</Filter>
+    </ClInclude>
+    <ClInclude Include="muduo\net\Channel.h">
+      <Filter>muduo\net</Filter>
+    </ClInclude>
+    <ClInclude Include="muduo\net\Connector.h">
+      <Filter>muduo\net</Filter>
+    </ClInclude>
+    <ClInclude Include="muduo\net\Endian.h">
+      <Filter>muduo\net</Filter>
+    </ClInclude>
+    <ClInclude Include="muduo\net\EventLoop.h">
+      <Filter>muduo\net</Filter>
+    </ClInclude>
+    <ClInclude Include="muduo\net\EventLoopThread.h">
+      <Filter>muduo\net</Filter>
+    </ClInclude>
+    <ClInclude Include="muduo\net\EventLoopThreadPool.h">
+      <Filter>muduo\net</Filter>
+    </ClInclude>
+    <ClInclude Include="muduo\net\InetAddress.h">
+      <Filter>muduo\net</Filter>
+    </ClInclude>
+    <ClInclude Include="muduo\net\Poller.h">
+      <Filter>muduo\net</Filter>
+    </ClInclude>
+    <ClInclude Include="muduo\net\Socket.h">
+      <Filter>muduo\net</Filter>
+    </ClInclude>
+    <ClInclude Include="muduo\net\SocketsOps.h">
+      <Filter>muduo\net</Filter>
+    </ClInclude>
+    <ClInclude Include="muduo\net\TcpClient.h">
+      <Filter>muduo\net</Filter>
+    </ClInclude>
+    <ClInclude Include="muduo\net\TcpConnection.h">
+      <Filter>muduo\net</Filter>
+    </ClInclude>
+    <ClInclude Include="muduo\net\TcpServer.h">
+      <Filter>muduo\net</Filter>
+    </ClInclude>
+    <ClInclude Include="muduo\net\Timer.h">
+      <Filter>muduo\net</Filter>
+    </ClInclude>
+    <ClInclude Include="muduo\net\TimerId.h">
+      <Filter>muduo\net</Filter>
+    </ClInclude>
+    <ClInclude Include="muduo\net\TimerQueue.h">
+      <Filter>muduo\net</Filter>
+    </ClInclude>
+    <ClInclude Include="muduo\net\ZlibStream.h">
+      <Filter>muduo\net</Filter>
+    </ClInclude>
+    <ClInclude Include="muduo\base\AsyncLogging.h">
+      <Filter>muduo\base</Filter>
+    </ClInclude>
+    <ClInclude Include="muduo\base\Atomic.h">
+      <Filter>muduo\base</Filter>
+    </ClInclude>
+    <ClInclude Include="muduo\base\BlockingQueue.h">
+      <Filter>muduo\base</Filter>
+    </ClInclude>
+    <ClInclude Include="muduo\base\BoundedBlockingQueue.h">
+      <Filter>muduo\base</Filter>
+    </ClInclude>
+    <ClInclude Include="muduo\base\Condition.h">
+      <Filter>muduo\base</Filter>
+    </ClInclude>
+    <ClInclude Include="muduo\base\copyable.h">
+      <Filter>muduo\base</Filter>
+    </ClInclude>
+    <ClInclude Include="muduo\base\CountDownLatch.h">
+      <Filter>muduo\base</Filter>
+    </ClInclude>
+    <ClInclude Include="muduo\base\CurrentThread.h">
+      <Filter>muduo\base</Filter>
+    </ClInclude>
+    <ClInclude Include="muduo\base\Date.h">
+      <Filter>muduo\base</Filter>
+    </ClInclude>
+    <ClInclude Include="muduo\base\Exception.h">
+      <Filter>muduo\base</Filter>
+    </ClInclude>
+    <ClInclude Include="muduo\base\FileUtil.h">
+      <Filter>muduo\base</Filter>
+    </ClInclude>
+    <ClInclude Include="muduo\base\GzipFile.h">
+      <Filter>muduo\base</Filter>
+    </ClInclude>
+    <ClInclude Include="muduo\base\LogFile.h">
+      <Filter>muduo\base</Filter>
+    </ClInclude>
+    <ClInclude Include="muduo\base\Logging.h">
+      <Filter>muduo\base</Filter>
+    </ClInclude>
+    <ClInclude Include="muduo\base\LogStream.h">
+      <Filter>muduo\base</Filter>
+    </ClInclude>
+    <ClInclude Include="muduo\base\Mutex.h">
+      <Filter>muduo\base</Filter>
+    </ClInclude>
+    <ClInclude Include="muduo\base\noncopyable.h">
+      <Filter>muduo\base</Filter>
+    </ClInclude>
+    <ClInclude Include="muduo\base\ProcessInfo.h">
+      <Filter>muduo\base</Filter>
+    </ClInclude>
+    <ClInclude Include="muduo\base\Singleton.h">
+      <Filter>muduo\base</Filter>
+    </ClInclude>
+    <ClInclude Include="muduo\base\StringPiece.h">
+      <Filter>muduo\base</Filter>
+    </ClInclude>
+    <ClInclude Include="muduo\base\Thread.h">
+      <Filter>muduo\base</Filter>
+    </ClInclude>
+    <ClInclude Include="muduo\base\ThreadLocal.h">
+      <Filter>muduo\base</Filter>
+    </ClInclude>
+    <ClInclude Include="muduo\base\ThreadLocalSingleton.h">
+      <Filter>muduo\base</Filter>
+    </ClInclude>
+    <ClInclude Include="muduo\base\ThreadPool.h">
+      <Filter>muduo\base</Filter>
+    </ClInclude>
+    <ClInclude Include="muduo\base\Timestamp.h">
+      <Filter>muduo\base</Filter>
+    </ClInclude>
+    <ClInclude Include="muduo\base\TimeZone.h">
+      <Filter>muduo\base</Filter>
+    </ClInclude>
+    <ClInclude Include="muduo\base\Types.h">
+      <Filter>muduo\base</Filter>
+    </ClInclude>
+    <ClInclude Include="muduo\base\WeakCallback.h">
+      <Filter>muduo\base</Filter>
+    </ClInclude>
+    <ClInclude Include="contrib\thrift\ThriftConnection.h">
+      <Filter>contrib\thrift</Filter>
+    </ClInclude>
+    <ClInclude Include="contrib\thrift\ThriftServer.h">
+      <Filter>contrib\thrift</Filter>
+    </ClInclude>
+    <ClInclude Include="contrib\hiredis\Hiredis.h">
+      <Filter>contrib\hiredis</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="muduo\net\protorpc\README">
+      <Filter>muduo\net\protorpc</Filter>
+    </None>
+    <None Include="muduo\net\protorpc\rpc.proto">
+      <Filter>muduo\net\protorpc</Filter>
+    </None>
+    <None Include="muduo\net\protorpc\rpcservice.proto">
+      <Filter>muduo\net\protorpc</Filter>
+    </None>
+    <None Include="contrib\thrift\tests\ping\ping.thrift">
+      <Filter>contrib\thrift\test\ping</Filter>
+    </None>
+    <None Include="contrib\thrift\tests\ping\pingclient.py">
+      <Filter>contrib\thrift\test\ping</Filter>
+    </None>
+    <None Include="contrib\thrift\tests\echo\echo.thrift">
+      <Filter>contrib\thrift\test\echo</Filter>
+    </None>
+    <None Include="contrib\thrift\tests\echo\echoclient.py">
+      <Filter>contrib\thrift\test\echo</Filter>
+    </None>
+    <None Include="contrib\hiredis\README.md">
+      <Filter>contrib\hiredis</Filter>
+    </None>
+  </ItemGroup>
+</Project>
